@@ -43,12 +43,14 @@ cp .env.example .env
 ```
 
 ## Screeshots
-
 Before:
+
 <img width="633" height="329" alt="image" src="https://github.com/user-attachments/assets/1459c862-12ab-48d1-82be-961f23e61f74" />
 <img width="184" height="278" alt="image" src="https://github.com/user-attachments/assets/e23c4361-7012-4fa5-8999-fca987593bc2" />
 <img width="152" height="112" alt="image" src="https://github.com/user-attachments/assets/e273b43a-baad-4ece-894b-fab9eca36a60" />
+
 After
+
 <img width="640" height="251" alt="image" src="https://github.com/user-attachments/assets/bb483782-e7a0-41df-8e9f-aaed8fe2c537" />
 
 ## Running — terminal
