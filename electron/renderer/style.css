@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #1e1e22;
+  color: #eee;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.msg {
+  max-width: 80%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  line-height: 1.4;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.msg.user {
+  align-self: flex-end;
+  background: #4f7cff;
+  color: white;
+}
+
+.msg.deskmate {
+  align-self: flex-start;
+  background: #33343a;
+  color: #eee;
+}
+
+#input-row {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #33343a;
+}
+
+#input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #26272c;
+  color: #eee;
+  font-size: 14px;
+}
+
+#input:focus {
+  outline: none;
+  border-color: #4f7cff;
+}
+
+#send {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4f7cff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#send:hover {
+  background: #3d6af0;
+}
+
+#input:disabled,
+#send:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.plan-card {
+  max-width: 92%;
+}
+
+.plan-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.plan-category {
+  font-size: 12px;
+  color: #a9abb3;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.plan-list {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+.plan-list li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.plan-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.plan-yes,
+.plan-cancel {
+  flex: 1;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.plan-yes {
+  background: #3ec06a;
+  color: #0b1f12;
+}
+
+.plan-yes:hover {
+  background: #35ab5c;
+}
+
+.plan-cancel {
+  background: #45464d;
+  color: #eee;
+}
+
+.plan-cancel:hover {
+  background: #56575f;
+}
+
+.undo-btn {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #4f7cff;
+  background: transparent;
+  color: #7fa0ff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.undo-btn:hover {
+  background: rgba(79, 124, 255, 0.12);
+}
+
+.undo-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

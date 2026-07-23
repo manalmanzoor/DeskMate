@@ -1,0 +1,53 @@
+{
+  "name": "deskmate",
+  "version": "1.0.0",
+  "description": "A safe, local AI agent that organizes your real files",
+  "main": "electron/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "electron .",
+    "test": "node --test",
+    "build": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.deskmate.app",
+    "productName": "DeskMate",
+    "files": [
+      "electron/**/*",
+      "src/**/*",
+      "index.js",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist-installer"
+    },
+    "win": {
+      "target": ["nsis", "portable"],
+      "icon": "electron/assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "@langchain/classic": "^1.0.40",
+    "@langchain/community": "^1.1.29",
+    "@langchain/core": "^1.2.3",
+    "@langchain/groq": "^1.3.1",
+    "@langchain/textsplitters": "^1.0.1",
+    "dotenv": "^17.4.2",
+    "langchain": "^1.5.3",
+    "pdf-parse": "^2.4.5",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3"
+  }
+}
